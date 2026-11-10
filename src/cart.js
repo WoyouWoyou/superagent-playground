@@ -17,7 +17,5 @@ export function applyPercentageDiscount(amount, percent) {
 
 /** The final total: the basket, less a percentage discount. */
 export function total(lines, percent = 0) {
-  return roundToCents(
-    lines.reduce((sum, line) => sum + applyPercentageDiscount(lineTotal(line), percent), 0),
-  )
+  return applyPercentageDiscount(subtotal(lines), percent)
 }

@@ -2,4 +2,4 @@
 
 This file exists so the agent has something small to work on.
 
-Please recieve the greeting and reply politely.
+Please receive the greeting and reply politely.
